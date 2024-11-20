@@ -1,0 +1,37 @@
+package examples
+
+import (
+	"github.com/HumamAlhusaini/active-search/internal/model"
+	"github.com/HumamAlhusaini/active-search/internal/views/components"
+)
+
+// example
+templ DefaultRadio() {
+	<div class="max-w-xs mx-auto pt-4">
+		@components.Radio(
+			model.Radio{
+				Name: "my-radio-group1",
+				Values: map[string]string{
+					"Apples":  "apples",
+					"Oranges": "oranges",
+				},
+			},
+		)
+	</div>
+}
+
+// example
+templ PrimaryRadio() {
+	<div class="max-w-xs mx-auto pt-4">
+		@components.Radio(
+			model.Radio{
+				Name: "my-radio-group2",
+				Values: map[string]string{
+					"Apples":  "apples",
+					"Oranges": "oranges",
+				},
+				Class: "radio-primary",
+			},
+		)
+	</div>
+}

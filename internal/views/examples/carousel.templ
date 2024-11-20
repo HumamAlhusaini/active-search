@@ -1,0 +1,22 @@
+package examples
+
+import (
+	"github.com/HumamAlhusaini/active-search/internal/model"
+	"github.com/HumamAlhusaini/active-search/internal/views/components"
+)
+
+// example
+templ CarouselExample() {
+	<div class="max-h-80 pt-4 max-w-screen-md">
+		@components.Carousel(
+			[]model.Image{
+				{Source: "/static/images/avatar.jpg", Alt: "avatar image"},
+				{Source: "/static/images/avatar.jpg", Alt: "avatar image"},
+				{Source: "/static/images/avatar.jpg", Alt: "avatar image"},
+				{Source: "/static/images/avatar.jpg", Alt: "avatar image"},
+				{Source: "/static/images/avatar.jpg", Alt: "avatar image"},
+				{Source: "/static/images/avatar.jpg", Alt: "avatar image"},
+			},
+		)
+	</div>
+}

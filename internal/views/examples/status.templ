@@ -1,0 +1,18 @@
+package examples
+
+import (
+	"github.com/HumamAlhusaini/active-search/internal/model"
+	"github.com/HumamAlhusaini/active-search/internal/views/components"
+)
+
+// example
+templ StatusNotFound() {
+	@components.Status(model.Status{
+		Code:        404,
+		Title:       "Not Found",
+		Description: "Looks like there's nothing here...",
+		ReturnButton: model.Button{
+			Label: "Go back",
+		},
+	})
+}

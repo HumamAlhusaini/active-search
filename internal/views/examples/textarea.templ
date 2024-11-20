@@ -1,0 +1,33 @@
+package examples
+
+import (
+	"github.com/HumamAlhusaini/active-search/internal/model"
+	"github.com/HumamAlhusaini/active-search/internal/views/components"
+)
+
+// example
+templ BasicTextarea() {
+	<div class="pt-4">
+		@components.Textarea(
+			model.Textarea{
+				Label: "Description",
+				Name:  "description",
+				Class: "textarea-bordered resize-none",
+			},
+		)
+	</div>
+}
+
+// example
+templ BasicTextareaWithError() {
+	<div class="pt-4">
+		@components.Textarea(
+			model.Textarea{
+				Label: "Description",
+				Name:  "description",
+				Err:   "Description cannot be empty",
+				Class: "textarea-bordered resize-none",
+			},
+		)
+	</div>
+}

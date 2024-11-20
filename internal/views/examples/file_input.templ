@@ -1,0 +1,15 @@
+package examples
+
+import (
+	"github.com/HumamAlhusaini/active-search/internal/model"
+	"github.com/HumamAlhusaini/active-search/internal/views/components"
+)
+
+// example
+templ BasicFileInput() {
+	@components.FileInput(model.Input{
+		Label: "File upload",
+		Name:  "file",
+		Class: "input-bordered",
+	})
+}
