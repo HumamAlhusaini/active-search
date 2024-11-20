@@ -7,4 +7,8 @@
   > make tw  
   > make dev  
 
-3. Appreciate the help!
+3. Go to localhost:7000/active-search-table & localhost:7000/active-search
+
+Make sure to scroll down in localhost:7000/active-search-table to see the search-table
+
+4. Thanks for the help!
