@@ -13,5 +13,5 @@ func main() {
 	e.GET("/active-search-table", handler.GetActiveSearchExampleTable)
 	e.GET("/active-search", handler.GetActiveSearchExample)
 
-	e.Start(":7000")
+	e.Start(":8080")
 }
